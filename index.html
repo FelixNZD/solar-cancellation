@@ -20,13 +20,6 @@ p.body{font-size:15.5px;color:#333;margin-bottom:12px;line-height:1.75}
 .btn:hover{background:#0d47a1}
 .btn:active{transform:scale(.99)}
 .no-msg{text-align:center;font-size:16px;color:#c0392b;font-weight:600;padding:14px 0 4px;line-height:1.6}
-.screen.off{display:none}
-.load{padding:28px 0 8px}
-.st{font-size:17px;font-weight:600;color:#111;margin-bottom:20px;min-height:24px;transition:opacity .3s}
-.st.fade{opacity:0}
-.pt{background:#e5e7eb;border-radius:99px;height:10px;overflow:hidden;margin-bottom:8px}
-.pb{height:100%;background:linear-gradient(90deg,#1565c0,#42a5f5);border-radius:99px;width:0%;transition:width .3s}
-.pp{font-size:12px;color:#aaa;text-align:right}
 footer{max-width:680px;margin:28px auto 0;padding:16px 16px 0;border-top:1px solid #eee}
 .disc{font-size:11px;color:#bbb;line-height:1.75;text-align:center}
 .disc a{color:#bbb;text-decoration:underline}
@@ -147,14 +140,6 @@ footer{max-width:680px;margin:28px auto 0;padding:16px 16px 0;border-top:1px sol
   <div id="nm" style="display:none"><p class="no-msg">Sorry, this program is only available to homeowners with existing solar contracts.</p></div>
 </div>
 
-<!-- Screen 2: Loading -->
-<div class="screen off" id="ls">
-  <div class="load">
-    <p class="st" id="st">Checking eligibility...</p>
-    <div class="pt"><div class="pb" id="pb"></div></div>
-    <p class="pp" id="pp">0%</p>
-  </div>
-</div>
 
 </div><!-- /wrap -->
 
@@ -174,36 +159,7 @@ function doNo(){
   document.getElementById('nm').style.display='block';
 }
 function doYes(){
-  document.getElementById('qs').classList.add('off');
-  document.getElementById('ls').classList.remove('off');
-  var OFFER='https://REPLACE-THIS-WITH-YOUR-OFFER-URL.com';
-  var pb=document.getElementById('pb'),pp=document.getElementById('pp'),st=document.getElementById('st');
-  var steps=[
-    {t:'Checking eligibility...',f:0,to:40,d:1500},
-    {t:'Reviewing cancellation options...',f:40,to:80,d:1500},
-    {t:'You may qualify! Redirecting...',f:80,to:100,d:900}
-  ];
-  var i=0;
-  function next(){
-    if(i>=steps.length){window.location.href=OFFER;return;}
-    var s=steps[i];
-    st.classList.add('fade');
-    setTimeout(function(){
-      st.textContent=s.t;st.classList.remove('fade');
-      anim(s.f,s.to,s.d,function(){i++;setTimeout(next,120);});
-    },280);
-  }
-  function anim(from,to,dur,cb){
-    var start=null;
-    function tick(ts){
-      if(!start)start=ts;
-      var p=Math.min((ts-start)/dur,1),e=1-Math.pow(1-p,3),v=from+(to-from)*e;
-      pb.style.width=v+'%';pp.textContent=Math.round(v)+'%';
-      if(p<1)requestAnimationFrame(tick);else cb();
-    }
-    requestAnimationFrame(tick);
-  }
-  next();
+  window.location.href='https://t.americanhomeownerhub.com/cf/click';
 }
 </script>
 </body>

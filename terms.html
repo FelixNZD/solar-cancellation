@@ -6,59 +6,210 @@
 <title>Terms of Service — Solar Contract Cancellation</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#333;line-height:1.7;padding:0 0 60px}
-.wrap{max-width:680px;margin:0 auto;padding:40px 16px 0}
-h1{font-size:26px;font-weight:900;color:#111;margin-bottom:6px}
-.updated{font-size:13px;color:#999;margin-bottom:32px}
-h2{font-size:17px;font-weight:700;color:#111;margin:28px 0 8px}
-p{font-size:15px;margin-bottom:12px}
-ul{font-size:15px;padding-left:20px;margin-bottom:12px}
-ul li{margin-bottom:6px}
+body{background:#f7f7f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#333;line-height:1.7}
+
+/* Header */
+.site-header{background:#1565c0;padding:14px 16px}
+.site-header-inner{max-width:780px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.site-name{color:#fff;font-size:15px;font-weight:700;text-decoration:none;letter-spacing:.01em}
+.site-name span{opacity:.75;font-weight:400}
+.back-link{color:#fff;font-size:13px;opacity:.85;text-decoration:none;border:1px solid rgba(255,255,255,.4);border-radius:4px;padding:4px 10px;transition:opacity .15s}
+.back-link:hover{opacity:1}
+
+/* Layout */
+.page-wrap{max-width:780px;margin:0 auto;padding:32px 16px 60px;display:flex;gap:32px;align-items:flex-start}
+.toc{flex-shrink:0;width:200px;position:sticky;top:24px}
+.toc-title{font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.toc ol{list-style:none;padding:0}
+.toc ol li{margin-bottom:4px}
+.toc ol li a{font-size:13px;color:#1565c0;text-decoration:none;line-height:1.5;display:block;padding:2px 0}
+.toc ol li a:hover{text-decoration:underline}
+.content{flex:1;min-width:0;background:#fff;border-radius:8px;border:1px solid #e5e7eb;padding:36px 32px}
+
+/* Typography */
+.page-title{font-size:27px;font-weight:900;color:#111;margin-bottom:4px}
+.meta{font-size:13px;color:#999;margin-bottom:6px}
+.intro-box{background:#eff6ff;border-left:4px solid #1565c0;border-radius:0 6px 6px 0;padding:14px 16px;margin:20px 0 32px;font-size:14px;color:#1e40af;line-height:1.6}
+.warn-box{background:#fefce8;border-left:4px solid #ca8a04;border-radius:0 6px 6px 0;padding:14px 16px;margin:20px 0 28px;font-size:14px;color:#854d0e;line-height:1.6}
+h2.section{font-size:17px;font-weight:800;color:#111;margin:32px 0 10px;padding-top:8px;border-top:1px solid #f0f0f0}
+h2.section:first-of-type{margin-top:0;border-top:none;padding-top:0}
+p{font-size:15px;color:#444;margin-bottom:12px}
+ul.detail{padding-left:0;list-style:none;margin-bottom:14px}
+ul.detail li{font-size:15px;color:#444;padding:5px 0 5px 20px;position:relative;border-bottom:1px solid #f5f5f5}
+ul.detail li:last-child{border-bottom:none}
+ul.detail li::before{content:"–";position:absolute;left:0;color:#1565c0;font-weight:700}
 a{color:#1565c0}
-footer{max-width:680px;margin:40px auto 0;padding:16px 16px 0;border-top:1px solid #eee;font-size:12px;color:#bbb;text-align:center}
-footer a{color:#bbb}
+
+/* Footer */
+footer{background:#fff;border-top:1px solid #e5e7eb;padding:18px 16px;text-align:center}
+.foot-inner{max-width:780px;margin:0 auto}
+.foot-links{font-size:13px;color:#aaa;margin-bottom:4px}
+.foot-links a{color:#aaa;text-decoration:none;margin:0 8px}
+.foot-links a:hover{color:#666;text-decoration:underline}
+.foot-disc{font-size:11px;color:#ccc;line-height:1.6}
+
+@media(max-width:620px){
+  .page-wrap{flex-direction:column}
+  .toc{width:100%;position:static}
+  .content{padding:24px 18px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Terms of Service</h1>
-  <p class="updated">Last updated: February 2026</p>
 
-  <p>By accessing or using this website, you agree to be bound by these Terms of Service. If you do not agree, please do not use this site.</p>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-name" href="/solar-cancellation/">Solar Contract <span>Cancellation</span></a>
+    <a class="back-link" href="/solar-cancellation/">← Back to Home</a>
+  </div>
+</header>
 
-  <h2>1. Nature of This Site</h2>
-  <p>This website is an informational advertising page. It is designed to help homeowners learn about potential options related to solar panel contracts. The content on this page is for general informational purposes only and does not constitute legal advice.</p>
-  <p>Nothing on this site creates an attorney-client relationship. For advice specific to your situation, you should consult a qualified legal professional licensed in your state.</p>
+<div class="page-wrap">
 
-  <h2>2. Advertising Disclosure</h2>
-  <p>This page is an advertisement. Clicking the "Yes" button will redirect you to a third-party website. We may receive compensation for referrals. This compensation does not affect the information presented on this page.</p>
+  <!-- Table of Contents -->
+  <nav class="toc" aria-label="Page contents">
+    <p class="toc-title">On this page</p>
+    <ol>
+      <li><a href="#s1">Acceptance of Terms</a></li>
+      <li><a href="#s2">Nature of This Site</a></li>
+      <li><a href="#s3">No Legal Advice</a></li>
+      <li><a href="#s4">Advertising &amp; Compensation</a></li>
+      <li><a href="#s5">No Guarantees</a></li>
+      <li><a href="#s6">Eligibility</a></li>
+      <li><a href="#s7">Third-Party Sites</a></li>
+      <li><a href="#s8">Acceptable Use</a></li>
+      <li><a href="#s9">Intellectual Property</a></li>
+      <li><a href="#s10">Disclaimer of Warranties</a></li>
+      <li><a href="#s11">Limitation of Liability</a></li>
+      <li><a href="#s12">Indemnification</a></li>
+      <li><a href="#s13">Governing Law</a></li>
+      <li><a href="#s14">Changes to Terms</a></li>
+      <li><a href="#s15">Contact Us</a></li>
+    </ol>
+  </nav>
 
-  <h2>3. No Guarantees</h2>
-  <p>Results described or implied on this page are not guaranteed. Eligibility for any solar contract cancellation program depends on your individual circumstances, applicable state laws, and the specific terms of your contract. Not all applicants will qualify.</p>
+  <!-- Main Content -->
+  <main class="content">
+    <h1 class="page-title">Terms of Service</h1>
+    <p class="meta">Last updated: February 27, 2026 &nbsp;·&nbsp; Effective immediately</p>
 
-  <h2>4. Third-Party Sites</h2>
-  <p>This site contains links to third-party websites. We are not responsible for the content, accuracy, or practices of any third-party site. Visiting a linked site is at your own risk and subject to that site's own terms and privacy policy.</p>
+    <div class="intro-box">
+      <strong>Please read carefully.</strong> By accessing or using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use this site.
+    </div>
 
-  <h2>5. Intellectual Property</h2>
-  <p>All content on this site, including text and graphics, is owned by or licensed to us. You may not reproduce, distribute, or use any content from this site without our prior written consent.</p>
+    <h2 class="section" id="s1">1. Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") govern your access to and use of this website (the "Site"). By visiting the Site, you confirm that you are at least 18 years of age, that you have read and understood these Terms, and that you agree to be legally bound by them.</p>
+    <p>If you are using the Site on behalf of a business or organization, you represent that you have the authority to bind that entity to these Terms.</p>
 
-  <h2>6. Disclaimer of Warranties</h2>
-  <p>This site is provided on an "as is" and "as available" basis without any warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    <h2 class="section" id="s2">2. Nature of This Site</h2>
+    <p>This website is an informational advertising page operated by an independent publisher. Its purpose is to inform homeowners about potential options related to solar panel contracts and connect interested individuals with third-party specialists or programs.</p>
+    <p>This Site is not a law firm, legal services provider, or financial services company. It does not provide legal representation, legal counsel, or any professional services of any kind.</p>
 
-  <h2>7. Limitation of Liability</h2>
-  <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this site or any third-party site you access through it.</p>
+    <h2 class="section" id="s3">3. No Legal Advice</h2>
+    <div class="warn-box">
+      <strong>Important:</strong> Nothing on this website constitutes legal advice. The information provided is for general informational purposes only and is not a substitute for professional legal counsel.
+    </div>
+    <p>You should not act or refrain from acting based on any content on this Site without first seeking qualified legal advice from a licensed attorney in your jurisdiction. Every individual's legal situation is unique, and laws governing solar contracts vary significantly by state.</p>
+    <p>No attorney-client relationship is created by your use of this Site or by clicking any link on this page.</p>
 
-  <h2>8. Governing Law</h2>
-  <p>These Terms of Service are governed by applicable federal and state laws. Any disputes arising from use of this site shall be resolved in the appropriate jurisdiction.</p>
+    <h2 class="section" id="s4">4. Advertising &amp; Compensation Disclosure</h2>
+    <p>This page is an advertisement. The operator of this Site may receive financial compensation, including referral fees or commissions, when users click through to a linked third-party offer and take an action on that site (such as completing a form or making a purchase).</p>
+    <p>This compensation relationship does not influence the general information presented on this page. However, you should be aware that:</p>
+    <ul class="detail">
+      <li>The operator has a financial interest in users clicking through to the linked offer</li>
+      <li>The linked destination is a separate company with its own interests</li>
+      <li>You are under no obligation to click any link or take any action</li>
+    </ul>
 
-  <h2>9. Changes to These Terms</h2>
-  <p>We reserve the right to update these Terms at any time. Changes take effect immediately upon posting. Continued use of the site after changes constitutes acceptance of the updated Terms.</p>
+    <h2 class="section" id="s5">5. No Guarantees or Warranties of Results</h2>
+    <p>The operator makes no representations, warranties, or guarantees — express or implied — regarding any outcome, eligibility determination, savings, or legal result that may or may not arise from your use of this Site or any linked third-party service.</p>
+    <p>Specifically, we do not guarantee that:</p>
+    <ul class="detail">
+      <li>You will qualify for any solar contract cancellation program</li>
+      <li>Any specific savings or financial outcome will be achieved</li>
+      <li>Any third-party service will meet your needs or expectations</li>
+      <li>Legal cancellation of your solar contract is possible in your situation</li>
+    </ul>
+    <p>Results, if any, depend entirely on your individual circumstances, your contract terms, applicable state and federal law, and the judgment of licensed professionals.</p>
 
-  <h2>10. Contact</h2>
-  <p>If you have questions about these Terms, please contact us at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+    <h2 class="section" id="s6">6. Eligibility</h2>
+    <p>This Site is intended for homeowners in the United States who have existing solar panel contracts or loans. Use of this Site is void where prohibited by law. You represent that your use of this Site complies with all applicable laws and regulations in your jurisdiction.</p>
+
+    <h2 class="section" id="s7">7. Third-Party Sites &amp; Services</h2>
+    <p>This Site contains links to third-party websites operated by companies not affiliated with this Site's operator. When you click a link and leave this Site:</p>
+    <ul class="detail">
+      <li>You are subject to the third party's own terms of service and privacy policy</li>
+      <li>We have no control over the content, accuracy, or business practices of that site</li>
+      <li>We are not responsible for any loss or damage arising from your use of a third-party site</li>
+      <li>The presence of a link does not constitute our endorsement of that site or company</li>
+    </ul>
+    <p>We encourage you to read the terms and privacy policy of any site you visit before submitting personal information.</p>
+
+    <h2 class="section" id="s8">8. Acceptable Use</h2>
+    <p>You agree not to use this Site to:</p>
+    <ul class="detail">
+      <li>Engage in any unlawful activity or violate any applicable law or regulation</li>
+      <li>Attempt to gain unauthorized access to any part of the Site or its infrastructure</li>
+      <li>Transmit any malicious code, viruses, or disruptive content</li>
+      <li>Scrape, crawl, or systematically extract data from the Site</li>
+      <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity</li>
+    </ul>
+
+    <h2 class="section" id="s9">9. Intellectual Property</h2>
+    <p>All content on this Site — including but not limited to text, graphics, illustrations, and code — is the property of the Site operator or its licensors and is protected by applicable intellectual property laws.</p>
+    <p>You may view and print content from this Site for your personal, non-commercial use only. You may not reproduce, distribute, modify, publicly display, or create derivative works from any content on this Site without prior written consent from the operator.</p>
+
+    <h2 class="section" id="s10">10. Disclaimer of Warranties</h2>
+    <p>This Site is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without any warranties of any kind, either express or implied, including but not limited to:</p>
+    <ul class="detail">
+      <li>Warranties of merchantability or fitness for a particular purpose</li>
+      <li>Warranties that the Site will be uninterrupted, error-free, or secure</li>
+      <li>Warranties as to the accuracy, completeness, or currency of any information</li>
+      <li>Warranties of non-infringement of third-party rights</li>
+    </ul>
+    <p>Your use of this Site is at your sole risk.</p>
+
+    <h2 class="section" id="s11">11. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, the operator of this Site shall not be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages of any kind, including but not limited to:</p>
+    <ul class="detail">
+      <li>Loss of profits, revenue, data, or business opportunities</li>
+      <li>Damages arising from your reliance on information on this Site</li>
+      <li>Damages arising from your use of, or inability to use, any linked third-party site</li>
+      <li>Any legal outcome or financial result related to your solar contract</li>
+    </ul>
+    <p>In no event shall the operator's total liability to you for any claim exceed one hundred dollars ($100), even if advised of the possibility of such damages.</p>
+
+    <h2 class="section" id="s12">12. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless the operator, its affiliates, and their respective officers, employees, and agents from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising out of or related to your use of this Site, your violation of these Terms, or your violation of any third-party rights.</p>
+
+    <h2 class="section" id="s13">13. Governing Law &amp; Dispute Resolution</h2>
+    <p>These Terms are governed by the laws of the United States and the applicable laws of the state in which the operator is based, without regard to conflict of law principles.</p>
+    <p>Any dispute arising from or related to these Terms or your use of this Site shall first be attempted to be resolved informally by contacting us. If informal resolution is unsuccessful, disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, and you waive any right to a jury trial or class action.</p>
+
+    <h2 class="section" id="s14">14. Changes to These Terms</h2>
+    <p>We reserve the right to update or modify these Terms at any time without prior notice. Changes will be effective immediately upon posting to this page, as indicated by the updated "Last updated" date. Your continued use of the Site following any changes constitutes your acceptance of the revised Terms.</p>
+    <p>We encourage you to review these Terms periodically to stay informed of any updates.</p>
+
+    <h2 class="section" id="s15">15. Contact Us</h2>
+    <p>If you have any questions about these Terms of Service, please contact us:</p>
+    <ul class="detail">
+      <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
+      <li>Response time: within 5 business days</li>
+    </ul>
+  </main>
+
 </div>
+
 <footer>
-  <p><a href="/solar-cancellation/">Home</a> &nbsp;|&nbsp; <a href="/solar-cancellation/privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="/solar-cancellation/terms.html">Terms of Service</a></p>
+  <div class="foot-inner">
+    <p class="foot-links">
+      <a href="/solar-cancellation/">Home</a>
+      <a href="/solar-cancellation/privacy.html">Privacy Policy</a>
+      <a href="/solar-cancellation/terms.html">Terms of Service</a>
+    </p>
+    <p class="foot-disc">This page is an advertisement. Results may vary. Consult a legal professional for advice specific to your situation.</p>
+  </div>
 </footer>
+
 </body>
 </html>
